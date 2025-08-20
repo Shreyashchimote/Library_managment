@@ -1,7 +1,8 @@
-// Wait for animation then hide splash
+// Hide preloader after page loads
 window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.getElementById("splash").style.display = "none";
-    document.getElementById("content").style.display = "block";
-  }, 2500); // 2.5 sec splash
+  const preloader = document.getElementById("preloader");
+  const content = document.getElementById("content");
+
+  preloader.style.display = "none";  // Hide preloader
+  content.style.display = "block";   // Show homepage
 });

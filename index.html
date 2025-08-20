@@ -3,25 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Splash Screen Animation</title>
+  <title>Library Management System</title>
   <link rel="stylesheet" href="indexCss.css">
 </head>
 <body>
-  <!-- Splash screen -->
-  <div id="splash">
-    <h1 class="logo">Library</h1>
-    <div class="line"></div>
-    <div class="line"></div>
+  <!-- Preloader (Only Text) -->
+  <div id="preloader">
+    <p>Loading Library System...</p>
   </div>
 
-  <!-- Main content -->
-  <div id="content">
-    <h2>Welcome to Library Management System</h2>
+  <!-- Main Content -->
+  <div id="content" style="display: none;">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">📚 Library System</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <h1>Welcome to the Library</h1>
+      <p>Search, Borrow, and Explore your favorite books anytime</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for books...">
+        <button>Search</button>
+      </div>
+    </header>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="card">
+        <h3>📖 Browse Books</h3>
+        <p>Explore thousands of books by title, author, or genre.</p>
+      </div>
+      <div class="card">
+        <h3>✅ Easy Borrowing</h3>
+        <p>Issue and return books seamlessly with one click.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Dashboard</h3>
+        <p>Track issued books, due dates, and fines easily.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Library Management System | All Rights Reserved</p>
+    </footer>
   </div>
 
   <script src="indexScript.js"></script>
 </body>
 </html>
-
-
-
